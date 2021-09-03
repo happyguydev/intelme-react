@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.wrapper-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px dashed #858383;
+  margin-right: 16px;
+}
+
+.title-add-details {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.content-add-details:hover {
+  cursor: pointer;
+}
+
+.content-add-details:hover .title-add-details.placeholder,
+.content-add-details:hover .wrapper-box,
+.content-add-details:hover svg {
+  color: var(--teal-primary);
+  border-color: var(--teal-primary);
+}
+
+.content-add-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-add-details.placeholder {
+  margin: 0px;
+  color: #636363;
+  font-weight: normal;
+  font-size: 16;
+}
+
+.avatarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2rem;
+  background-color: var(--teal-light);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 6px;
+  height: 44px;
+}
+
+.avatarContainer .userName {
+  font-family: Poppins;
+  padding-left: 18px;
+  padding-right: 5px;
+  font-size: 1rem;
+  color: var(--teal-primary);
+  font-weight: 500;
+  cursor: pointer;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.avatarContainer .times {
+  font-size: 1.4rem;
+  font-family: Poppins;
+  color: var(--teal-primary);
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.avatarContainer .avatar {
+  width: 36px;
+  height: 36px;
+}
+
+.avatarContainer .avatar img {
+  width: 36px;
+  height: 36px;
+}
+
+.MuiDialog-container .filterContainer {
+  top: 1.8rem !important;
+  left: -187.261px ​ !important;
+  border-radius: 10px;
+}
+
+.MuiDialog-container .rc-menu__group {
+  max-height: 250px;
+  overflow: scroll;
+}
+/*# sourceMappingURL=style.css.map */

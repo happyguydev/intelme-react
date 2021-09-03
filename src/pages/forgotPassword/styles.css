@@ -1,0 +1,97 @@
+.forgotPassword {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1400px) {
+  .forgotPassword {
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+}
+
+.forgotPassword .image-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .forgotPassword .image-wrapper {
+    display: none;
+  }
+}
+
+.forgotPassword .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.forgotPassword .form-container h1 {
+  color: var(--teal-primary);
+  margin-bottom: 2rem;
+}
+
+.forgotPassword .form-container .description {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  margin-bottom: 2rem;
+  max-width: 27.3125rem;
+  color: var(--gray-darker);
+}
+
+.forgotPassword form {
+  width: 100%;
+  max-width: 27.3125rem;
+}
+
+.forgotPassword form .sendEmailButton {
+  width: 100%;
+  height: 2.25rem;
+  color: var(--white);
+  background: var(--teal-primary);
+  text-align: center;
+  border-radius: 0.625rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding: 0.625rem;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.forgotPassword form .sendEmailButton:hover {
+  background: var(--teal-dark);
+}
+/*# sourceMappingURL=styles.css.map */

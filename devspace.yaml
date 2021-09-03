@@ -1,0 +1,150 @@
+version: v1beta9
+images:
+  app:
+    image: gcr.io/title-block-ai/frontend
+    preferSyncOverRebuild: true
+    injectRestartHelper: true
+    appendDockerfileInstructions:
+      - USER root
+
+deployments:
+  - name: frontend
+    namespace: 'intelme-apps'
+    helm:
+      componentChart: true
+      values:
+        containers:
+          - env:
+              - name: CI
+                value: 'true'
+              - name: PUBLIC_URL
+                value: /
+              - name: REACT_APP_PATH
+                value: /
+              - name: REACT_APP_PREFIX
+                value: prod
+              - name: REACT_APP_URL
+                value: /
+              - name: API_BASE_HOST_URL
+                value: http://dev.intelme.com.au
+              - name: REACT_APP_GOOGLE_RECAPTCHA_API_KEY
+                valueFrom:
+                  secretKeyRef:
+                  key: sitekey
+                  name: apps-frontend-recaptcha-secret
+            image: gcr.io/title-block-ai/frontend
+        service:
+          ports:
+            - port: 3000
+        ingress:
+          ingressClass: kong
+          tls: false
+          rules:
+            - path: /
+          annotations:
+            kubernetes.io/ingress.class: kong
+
+dev:
+  ports:
+    - imageName: app
+      forward:
+        - port: 3000
+  open:
+    - url: http://localhost:3000
+  sync:
+    - imageName: app
+      excludePaths:
+        - .git/
+      uploadExcludePaths:
+        - Dockerfile
+        - node_modules/
+        - devspace.yaml
+      onUpload:
+        restartContainer: true
+
+profiles:
+  - name: production
+    patches:
+      - op: remove
+        path: images.app.injectRestartHelper
+      - op: remove
+        path: images.app.appendDockerfileInstructions
+  - name: debugging
+    patches:
+      - op: add
+        path: dev.interactive
+        value:
+          defaultEnabled: true
+      - op: add
+        path: images.app.entrypoint
+        value:
+          - sleep
+          - 9999999
+  - name: development
+    patches:
+      - op: replace
+        path: deployments.name=frontend
+        value:
+          name: frontend-dev
+          namespace: 'intelme-apps'
+          helm:
+            componentChart: true
+            values:
+              containers:
+                - env:
+                    - name: CI
+                      value: 'true'
+                    - name: PUBLIC_URL
+                      value: /frontend-dev
+                    - name: REACT_APP_PATH
+                      value: /frontend-dev
+                    - name: REACT_APP_PREFIX
+                      value: dev
+                    - name: REACT_APP_URL
+                      value: /frontend-dev/
+
+                  image: gcr.io/title-block-ai/frontend
+              service:
+                ports:
+                  - port: 3000
+              ingress:
+                ingressClass: kong
+                tls: false
+                rules:
+                  - path: /frontend-dev
+                annotations:
+                  kubernetes.io/ingress.class: kong
+  - name: frontend-uidev
+    patches:
+      - op: replace
+        path: deployments.name=frontend
+        value:
+          name: frontend-uidev
+          namespace: 'intelme-apps'
+          helm:
+            componentChart: true
+            values:
+              containers:
+                - env:
+                    - name: CI
+                      value: 'false'
+                    - name: PUBLIC_URL
+                      value: /frontend-uidev
+                    - name: REACT_APP_PATH
+                      value: /frontend-uidev
+                    - name: REACT_APP_PREFIX
+                      value: frontend-uidev
+                    - name: REACT_APP_URL
+                      value: /frontend-uidev/
+
+                  image: gcr.io/title-block-ai/frontend
+              service:
+                ports:
+                  - port: 3000
+              ingress:
+                ingressClass: kong
+                tls: false
+                rules:
+                  - path: /frontend-uidev
+                annotations:
+                  kubernetes.io/ingress.class: kong

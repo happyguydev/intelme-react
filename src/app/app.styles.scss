@@ -1,0 +1,32 @@
+.Container {
+  display: flex;
+}
+
+.wrapper {
+  padding: 1.5rem 0;
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0 auto auto auto;
+  max-width: 70rem;
+  @media (max-width: 1120px) {
+    padding: 1.5rem 2.5rem;
+  }
+  @media (max-width: 1360px) {
+    max-width: 60rem;
+  }
+}
+
+.footer {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  flex-grow: 1;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  color: #61a4ad;
+}

@@ -1,0 +1,44 @@
+.Container404 {
+  background-color: #fff;
+}
+.imgContainer {
+  background-image: url('../../assets/images/Teammates.svg');
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.textContainer {
+  background: #edf5f6;
+  margin-top: -20px;
+  padding: 31px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    font-family: 'Poppins';
+    color: var(--gray-dark);
+    margin-bottom: 16px;
+  }
+  h4 {
+    color: var(--gray-dark);
+    text-align: center;
+    font-weight: 400;
+    max-width: 490px;
+    margin-bottom: 58px;
+  }
+  .goBackBtn {
+    padding: 10px 16px;
+    background: #089bab;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: #017d8a;
+    }
+  }
+}

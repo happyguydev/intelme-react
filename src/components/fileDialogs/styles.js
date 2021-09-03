@@ -1,0 +1,171 @@
+import { makeStyles } from '@material-ui/core/styles';
+
+const dialogStyles = makeStyles({
+  modalTitle: {
+    padding: 0,
+    '& h2': {
+      color: 'var(--teal-primary)',
+      width: '100%',
+      display: 'flex',
+      alignItems: 'flex-start',
+      fontFamily: 'Montserrat, sans-serif',
+      fontStyle: 'normal',
+      fontWeight: 'normal',
+      fontSize: '1.125rem',
+      letterSpacing: '-0.2px',
+    },
+  },
+  content: {
+    padding: 0,
+    '& p': {
+      margin: '1.25rem 0',
+      fontFamily: 'Poppins, sans-serif',
+      fontStyle: 'normal',
+      fontWeight: 'normal',
+      fontSize: '0.875rem',
+      lineHeight: '1.25rem',
+      letterSpacing: '-0.2px',
+      color: 'var(--text-normal)',
+    },
+  },
+  actions: {
+    padding: 0,
+  },
+  newFileOverwrite: {
+    background: 'var(--teal-primary)',
+    borderRadius: '0.625rem',
+    padding: '0.625rem 1rem',
+    fontFamily: 'Poppins, sans-serif',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    fontSize: '0.75rem',
+    lineHeight: '1rem',
+    letterSpacing: '-0.2px',
+    color: 'var(--white)',
+    textTransform: 'capitalize',
+    transition: 'background 0.3s',
+    '&:hover': {
+      background: 'var(--teal-dark)',
+    },
+  },
+  blackEditing: {
+    background: 'var(--gray-normal)',
+    borderRadius: '0.625rem',
+    padding: '0.625rem 1rem',
+    fontFamily: 'Poppins, sans-serif',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    fontSize: '0.75rem',
+    lineHeight: '1rem',
+    letterSpacing: '-0.2px',
+    color: 'var(--white)',
+    textTransform: 'capitalize',
+    transition: 'background 0.3s',
+    '&:hover': {
+      background: 'var(--gray-dark)',
+    },
+  },
+  keepEditing: {
+    background: 'var(--util-orange-normal)',
+    borderRadius: '0.625rem',
+    padding: '0.625rem 1rem',
+    fontFamily: 'Poppins, sans-serif',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    fontSize: '0.75rem',
+    lineHeight: '1rem',
+    letterSpacing: '-0.2px',
+    color: 'var(--white)',
+    textTransform: 'capitalize',
+    transition: 'background 0.3s',
+    '&:hover': {
+      background: 'var(--util-orange-dark)',
+    },
+    '&:focus': {
+      background: 'var(--util-orange-dark)',
+    },
+    '&:active': {
+      background: 'var(--util-orange-dark)',
+    },
+  },
+  overwriteAction: {
+    background: 'var(--util-red-300)',
+    borderRadius: '0.625rem',
+    padding: '0.625rem 1rem',
+    fontFamily: 'Poppins, sans-serif',
+    fontStyle: 'normal',
+    fontWeight: 500,
+    fontSize: '0.75rem',
+    lineHeight: '1rem',
+    letterSpacing: '-0.2px',
+    color: 'var(--white)',
+    textTransform: 'capitalize',
+    transition: 'background 0.3s',
+    '&:hover': {
+      background: 'var(--util-red-500)',
+    },
+    '&:focus': {
+      background: 'var(--util-red-500)',
+    },
+    '&:active': {
+      background: 'var(--util-red-500)',
+    },
+  },
+  deleteAction: {
+    backgroundColor: 'var(--util-red-300) !important',
+    color: 'var(--white)',
+    borderRadius: '0.625rem',
+    padding: '0.625rem 1rem',
+    fontSize: '0.75rem',
+    fontWeight: '500',
+    lineHeight: '1rem',
+    letterSpacing: '-0.2px',
+    fontFamily: 'Poppins',
+    textTransform: 'none',
+    cursor: 'pointer',
+    '& svg': {
+      width: '1rem',
+      height: '1rem',
+    },
+    '& > span > div': {
+      marginLeft: '0',
+    },
+    '& > span > span': {
+      marginLeft: '0.5rem',
+    },
+    '&:hover': {
+      backgroundColor: 'var(--util-red-500) !important',
+    },
+  },
+  cancelAction: {
+    backgroundColor: 'var(--gray-normal) !important',
+    color: 'var(--white)',
+    borderRadius: '0.625rem',
+    padding: '0.625rem 1rem',
+    fontSize: '0.75rem',
+    fontWeight: '500',
+    lineHeight: '1rem',
+    letterSpacing: '-0.2px',
+    fontFamily: 'Poppins',
+    textTransform: 'none',
+    cursor: 'pointer',
+    '&:hover': {
+      backgroundColor: 'var(--text-normal) !important',
+    },
+  },
+  progressContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    marginLeft: '0.5rem',
+    '& div': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      '& svg': {
+        color: 'var(--white)',
+      },
+    },
+  },
+});
+
+export default dialogStyles;

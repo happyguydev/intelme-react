@@ -1,0 +1,119 @@
+.login-wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6rem;
+}
+
+.login-wrapper .image-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-wrapper .image-wrapper img {
+  width: 566px;
+  height: 588px;
+}
+
+@media (max-width: 768px) {
+  .login-wrapper .image-wrapper {
+    display: none;
+  }
+}
+
+.login-wrapper .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-wrapper .form-container h1 {
+  color: var(--teal-primary);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .login-wrapper .form-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.login-wrapper form {
+  width: 100%;
+  max-width: 27.3125rem;
+}
+
+.login-wrapper form .checkboxAndLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-wrapper form .checkboxAndLink a {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: var(--teal-primary);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.login-wrapper form .checkboxAndLink a:hover {
+  color: var(--teal-dark);
+}
+
+.login-wrapper form .loginButton {
+  width: 100%;
+  color: var(--white);
+  background: var(--teal-primary);
+  text-align: center;
+  border-radius: 0.625rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding: 0.625rem 0;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.login-wrapper form .loginButton:hover {
+  background: var(--teal-dark);
+}
+/*# sourceMappingURL=styles.css.map */

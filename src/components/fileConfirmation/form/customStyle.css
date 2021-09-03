@@ -1,0 +1,35 @@
+.custom-date-input {
+  background: var(--white);
+  border: 1px solid rgba(81, 92, 111, 0.16);
+  border-radius: 5px;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9375rem;
+  color: var(--text-normal);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  -webkit-transition: border 0.4s;
+  transition: border 0.4s;
+}
+
+.custom-date-input:hover {
+  border: 1px solid var(--teal-primary);
+}
+
+.custom-date-input:active {
+  border: 1px solid var(--teal-primary);
+}
+
+.custom-date-input:focus {
+  border: 1px solid var(--teal-primary);
+}
+
+.custom-date-input:focus-within {
+  border: 1px solid var(--teal-primary);
+}
+/*# sourceMappingURL=customStyle.css.map */

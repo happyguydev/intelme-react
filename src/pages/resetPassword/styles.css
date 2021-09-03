@@ -1,0 +1,123 @@
+.forgotPassword-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.forgotPassword-wrapper .image-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .forgotPassword-wrapper .image-wrapper {
+    display: none;
+  }
+}
+
+.forgotPassword-wrapper .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.forgotPassword-wrapper .form-container h1 {
+  color: var(--teal-primary);
+  margin-bottom: 2rem;
+}
+
+.forgotPassword-wrapper form {
+  width: 100%;
+  max-width: 27.3125rem;
+}
+
+.forgotPassword-wrapper form button {
+  width: 100%;
+  height: 2.25rem;
+  color: var(--white);
+  background: var(--teal-primary);
+  text-align: center;
+  border-radius: 0.625rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding: 0.625rem;
+  margin-bottom: 2rem;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.forgotPassword-wrapper form button:hover {
+  background: var(--teal-dark);
+}
+
+.forgotPassword-wrapper .password-requirements {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--text-normal);
+}
+
+.forgotPassword-wrapper .password-requirements .requirements-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forgotPassword-wrapper .password-requirements .requirements-info-wrapper span {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forgotPassword-wrapper .password-requirements .requirements-info-wrapper span img {
+  margin-right: 0.5rem;
+}
+
+.forgotPassword-wrapper .password-requirements .requirements-info-wrapper span :last-child {
+  margin-bottom: 0;
+}
+
+.forgotPassword-wrapper .password-requirements p {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--gray-normal);
+}
+/*# sourceMappingURL=styles.css.map */

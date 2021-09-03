@@ -1,0 +1,86 @@
+.search-container {
+  position: relative;
+  width: 100%;
+  margin-right: 8.0625rem;
+  max-width: 46rem;
+}
+
+.search-container svg {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.search-container .searchButton {
+  position: absolute;
+  right: 0;
+  background: var(--teal-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transform: translate(-25%, 35%);
+          transform: translate(-25%, 35%);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: -0.2px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: var(--teal-primary);
+}
+
+.search-container .searchButton:hover {
+  color: var(--teal-dark);
+}
+
+.search-container input {
+  background: var(--white);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 1.25rem;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.8125rem 0.5rem 3rem;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+  color: var(--text-normal);
+}
+
+.search-container input::-webkit-input-placeholder {
+  letter-spacing: -0.2px;
+  color: var(--gray-normal);
+}
+
+.search-container input:-ms-input-placeholder {
+  letter-spacing: -0.2px;
+  color: var(--gray-normal);
+}
+
+.search-container input::-ms-input-placeholder {
+  letter-spacing: -0.2px;
+  color: var(--gray-normal);
+}
+
+.search-container input::placeholder {
+  letter-spacing: -0.2px;
+  color: var(--gray-normal);
+}
+
+.search-container input:active, .search-container input:focus {
+  border: 1px solid var(--teal-primary);
+}
+
+.search-container input:hover {
+  border: 1px solid var(--teal-primary);
+}
+/*# sourceMappingURL=styles.css.map */

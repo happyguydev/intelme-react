@@ -1,0 +1,131 @@
+.menuContainer {
+  background: var(--teal-primary);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 1rem;
+  line-height: 1.25rem;
+  width: 100%;
+  letter-spacing: -0.2px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  white-space: nowrap;
+  color: var(--text-normal);
+  z-index: 1000;
+  width: auto;
+}
+.dropdowwButton {
+  border-radius: 30px;
+  padding: 0.625rem 1rem 0.625rem 1.5rem;
+  background: var(--teal-primary);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--white);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  transition: background 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: var(--teal-dark);
+  }
+  svg {
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.active {
+  color: var(--teal-primary);
+  padding: 0.75rem 1.5rem;
+  &:hover {
+    background: none;
+  }
+}
+
+.default {
+  transition: color 0.3s;
+  padding: 0.75rem 1.5rem;
+  &:hover {
+    background: none;
+    color: var(--teal-primary);
+  }
+}
+
+.projectFilterButton {
+  background: var(--teal-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  max-width: 120px;
+  line-height: 1.5rem;
+  color: var(--white);
+  margin-right: 0.5rem;
+  margin-left: auto;
+  transition: background 0.3s ease-in;
+  svg {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  &:hover {
+    background-color: var(--teal-dark);
+  }
+}
+
+.selectedProjectName {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    overflow: hidden;
+    max-width: 4.25rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-items: center;
+  }
+  .removeProject {
+    overflow: unset;
+    max-width: auto;
+    white-space: unset;
+    text-overflow: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg {
+    color: var(--white);
+  }
+}
+
+// SECOND TYPE STYLE
+
+.menuWhiteContainer {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: var(--white);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  margin-top: 0.5rem;
+  width: 180px;
+  font-weight: normal;
+  max-height: 300px;
+  overflow: auto;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  letter-spacing: -0.2px;
+  color: var(--text-normal);
+}

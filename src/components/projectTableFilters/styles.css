@@ -1,0 +1,182 @@
+.selectedStatus {
+  background: var(--teal-primary);
+  color: var(--white);
+  border-top-left-radius: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 2.25rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.selectedStatus p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 4.035rem;
+  overflow: hidden;
+}
+
+.selectedStatus svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.selectedStatus svg * {
+  stroke: var(--white);
+}
+
+.selectedStatus span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0.4rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  text-decoration: underline;
+  background: var(--teal-primary);
+  -webkit-transform: translate(0, 70%);
+          transform: translate(0, 70%);
+}
+
+.selectedSender {
+  background: var(--teal-primary);
+  color: var(--white);
+  border-top-left-radius: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 2.25rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.selectedSender p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 4.035rem;
+  overflow: hidden;
+}
+
+.selectedSender svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.selectedSender svg * {
+  stroke: var(--white);
+}
+
+.selectedSender span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0.4rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  text-decoration: underline;
+  background: var(--teal-primary);
+  -webkit-transform: translate(0, 70%);
+          transform: translate(0, 70%);
+}
+
+.dateContainer {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  bottom: 0;
+  padding: 0;
+}
+
+.selectedRange {
+  background: var(--teal-primary);
+  color: var(--white);
+  border-top-left-radius: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 2.25rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.selectedRange p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 5.5rem;
+  overflow: hidden;
+}
+
+.selectedRange svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.selectedRange svg * {
+  stroke: var(--white);
+}
+
+.selectedRange span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0.4rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  text-decoration: underline;
+  background: var(--teal-primary);
+  -webkit-transform: translate(0, 70%);
+          transform: translate(0, 70%);
+}
+/*# sourceMappingURL=styles.css.map */

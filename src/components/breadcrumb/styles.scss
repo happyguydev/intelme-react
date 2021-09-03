@@ -1,0 +1,21 @@
+.container {
+  font-family: Poppins !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  margin-top: 0.125rem !important;
+  letter-spacing: -0.2px !important;
+  margin-bottom: 0.875rem !important;
+  color: var(--gray-normal) !important;
+  .text {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--gray-normal);
+    font-size: 0.75rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

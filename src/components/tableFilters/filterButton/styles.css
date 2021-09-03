@@ -1,0 +1,320 @@
+.filterButton {
+  background: var(--teal-light);
+  color: var(--teal-primary);
+  border-top-left-radius: 0;
+  border-radius: 20px;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 2.25rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.filterButton svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.openFilterButton {
+  background: var(--teal-light);
+  color: var(--teal-primary);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  height: 2.25rem;
+  line-height: 1rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.openFilterButton svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.openFilterButton::after {
+  content: '';
+  position: absolute;
+  height: 0.4375rem;
+  width: 100%;
+  background-color: var(--teal-light);
+  bottom: -0.4375rem;
+  left: 0;
+}
+
+.filterContainer {
+  background: var(--teal-light);
+  font-family: Poppins, sans-serif;
+  border-top-left-radius: 0;
+  top: 1.5rem !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  max-height: 220px;
+  overflow-y: scroll;
+}
+
+.emptyResult {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  color: var(--text-normal);
+  cursor: default;
+  line-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.2px;
+}
+
+.emptyResult:hover {
+  background: none;
+}
+
+.filterItem {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  color: var(--text-normal);
+  line-height: 1rem;
+  letter-spacing: -0.2px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.filterItem svg {
+  margin-right: 0.5rem;
+}
+
+.filterItem svg.emptyStar path {
+  stroke: var(--util-gold);
+}
+
+.filterItem:hover {
+  background: transparent;
+  color: var(--teal-primary);
+}
+
+.filterItem p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 20rem;
+}
+
+.filterAvatar {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  color: var(--text-normal);
+  line-height: 1rem;
+  letter-spacing: -0.2px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  gap: 0.5rem;
+}
+
+.filterAvatar div {
+  margin: 0 !important;
+}
+
+.filterAvatar svg {
+  margin-right: 0.5rem;
+}
+
+.filterAvatar svg.emptyStar path {
+  stroke: var(--util-gold);
+}
+
+.filterAvatar:hover {
+  background: transparent;
+  color: var(--teal-primary);
+}
+
+.selected {
+  background: var(--teal-primary);
+  color: var(--white);
+  border-top-left-radius: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 2.25rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.selected .projects {
+  max-width: 2.5rem;
+}
+
+.selected .users {
+  width: 3.65rem;
+  max-width: 3.65rem;
+}
+
+.selected p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.selected svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.selected svg * {
+  stroke: var(--white);
+}
+
+.selected span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0.4rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  text-decoration: underline;
+  background: var(--teal-primary);
+  -webkit-transform: translate(0, 70%);
+          transform: translate(0, 70%);
+}
+
+.inputContainer {
+  border-bottom: 1px solid rgba(29, 32, 32, 0.1) !important;
+}
+
+.input {
+  font-family: Poppins, sans-serif !important;
+  color: var(--text-normal) !important;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.selectedPriority {
+  background: var(--teal-primary);
+  color: var(--white);
+  border-top-left-radius: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 2.25rem;
+  letter-spacing: -0.2px;
+  width: auto;
+}
+
+.selectedPriority p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 2.425rem;
+  overflow: hidden;
+}
+
+.selectedPriority svg {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.selectedPriority svg * {
+  stroke: var(--white);
+}
+
+.selectedPriority span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0.4rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  text-decoration: underline;
+  background: var(--teal-primary);
+  -webkit-transform: translate(0, 70%);
+          transform: translate(0, 70%);
+}
+
+.selectedEmptyStar path {
+  fill: transparent;
+}
+
+.selectedFullStar path {
+  fill: var(--white);
+}
+
+.selectedHalfStar :last-child {
+  fill: var(--white);
+}
+/*# sourceMappingURL=styles.css.map */

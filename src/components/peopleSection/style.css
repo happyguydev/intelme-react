@@ -1,0 +1,121 @@
+.container-people-section{
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+border-radius: 10px;
+padding: 24px;
+width: 48.7%;
+max-height: 808px;
+overflow: scroll;
+}
+.container-people-section h2{
+    color:var(--teal-primary);
+    margin-bottom: 16px;
+}
+.row-wrapper{
+  justify-content: space-between;
+    padding: 16px;
+    height: 72px;
+
+}
+.filter-wrapper{
+    margin-bottom: 16px;
+    display: flex;
+}
+.filter-wrapper button:nth-child(2){
+  margin:0px 16px
+}
+.projectName{
+    display:block;
+    line-height: 20px;
+}
+.row-wrapper  h4{
+font-weight: normal;
+color: #4D4D4D;
+/* margin-left: 16px; */
+
+}
+/* .row-wrapper  p{
+    color: #A5A5A5;
+    
+    } */
+.row-wrapper .avatar{
+    margin: inherit;
+}
+.row-wrapper:nth-child(even){
+background-color:#F7F7F7 ;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.team-name{
+    display: flex;
+    max-width: 160px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+.team-sign{
+    background: #37C5AB;
+border-radius: 4px;
+width:16px;
+height:16px;
+margin-right: 7px;
+min-width: 16px;
+}
+.dot-icons {
+    background: none;
+}
+.dot-icons svg:hover{
+    fill: #017D8A;
+    cursor: pointer;
+}
+.user-name-full{
+    margin-left: 16px;
+}
+.more-details{
+background: #FFFFFF;
+border: 1px solid #F0F0F0;
+box-sizing: border-box;
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.08);
+border-radius: 15px;
+padding: 24px;
+position: absolute;
+top: 30px;
+z-index: 999;
+right:-15px;
+width: 
+376px;
+}
+.more-details .title{
+    color: #7E7E7E;
+    font-weight: 300;
+    width:70px;
+    text-align: right;
+
+}
+.more-details p{
+    font-size: 13px;
+}
+.more-details .names{
+    font-size: 15px;
+    margin-left: 25px;
+}
+.more-details .names span{
+    display: block;
+    max-width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.more-details .wrapper-info{
+display: flex;
+}
+.more-details .wrapper-info:nth-child(2){
+    margin-top: 16px;
+}
+.userDetails::after{
+    right:87%;
+    bottom: 1px;
+}

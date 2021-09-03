@@ -1,0 +1,86 @@
+.menuContainer {
+  background: var(--teal-light);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.2px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: var(--text-normal);
+}
+
+.menuButton {
+  border-radius: 30px;
+  padding: 0.4rem 1rem 0.4rem 1.5rem;
+  background: var(--teal-light);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--teal-primary);
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.menuButton.empty {
+  border: 2px dashed grey;
+  background: transparent;
+  color: grey;
+}
+
+.menuButton:hover {
+  background: var(--teal-light);
+}
+
+.menuButton svg {
+  margin-left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.active {
+  color: var(--teal-primary);
+  padding: 0.75rem 1.5rem;
+}
+
+.active:hover {
+  background: none;
+}
+
+.default {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding: 0.75rem 1.5rem;
+}
+
+.default:hover {
+  background: none;
+  color: var(--teal-primary);
+}
+
+.menuWhiteContainer {
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: var(--white);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.2px;
+  color: var(--text-normal);
+}
+/*# sourceMappingURL=styles.css.map */

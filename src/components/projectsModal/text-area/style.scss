@@ -1,0 +1,19 @@
+.textarea-custom {
+  min-height: 140px;
+  height: 140px;
+  background: hsla(0, 0%, 98%, 0.6);
+  border: 1.5px solid #e6e6e6;
+  border-radius: 5px;
+  margin: 30px 0;
+  padding: 20px;
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #636363;
+}
+.textarea-custom:focus {
+  border-color: #089bab;
+}
